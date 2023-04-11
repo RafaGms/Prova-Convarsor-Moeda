@@ -1,17 +1,26 @@
 <div
   class="container-conversor position-absolute top-50 start-50 translate-middle w-100 d-md-flex vh-100 align-items-md-center justify-content-md-center">
   <div class="content">
-  <div class="row ">
-      <!-- Primeira parte do col-12-->
-      <div class="col-12 divisao align-self-center">
+    <div class="row ">
+      <!-- Primeira parte do col-6 -->
+      <div class="col-12  divisao align-self-center">
         <div class="col-12">
           <h1 class="fw-bold fs-1 text-center animation mb-5"> Conversor</h1>
           <p class="text-center text-danger mb-2 ">{{mensagemError}}</p>
         </div>
+        <div class="col-12 mb-4">
+
+
+          <label for="">Valor do Cambio</label>
+          <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
+            [(ngModel)]="valorCambio" (keyup)="verificacao3()" placeholder="0">
+
+        </div>
         <div class="col-12">
           <div class="input-group mb-4">
             <div ngbDropdown class="d-inline-block">
-              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption1" (click)="limpar()">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption1"
+                (click)="limpar()">
                 <option selected Disabled>Moeda</option>
                 <option value="1">Real</option>
                 <option value="2">Dolar</option>
@@ -19,21 +28,15 @@
               </select>
             </div>
             <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
-              [(ngModel)]="primeiroNumero"  placeholder="0">
+              [(ngModel)]="primeiroNumero" (keyup)="verificacao1()" placeholder="0">
           </div>
         </div>
-        <div class="col-12 mb-5">
-
-            <label for="">Valor Cambio</label>
-            <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
-              [(ngModel)]="primeiroNumero"  placeholder="0">
-
-        </div>
 
         <div class="col-12">
           <div class="input-group mb-4">
             <div ngbDropdown class="d-inline-block">
-              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption2" (click)="limpar()">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption2"
+                (click)="limpar()">
                 <option selected Disabled>Moeda</option>
                 <option value="1">Real</option>
                 <option value="2">Dolar</option>
@@ -41,13 +44,18 @@
               </select>
             </div>
             <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
-              [(ngModel)]="segundoNumero"  placeholder="0">
+              [(ngModel)]="segundoNumero" (keyup)="verificacao2()" placeholder="0">
           </div>
         </div>
       </div>
 
+      <!-- Segunda parte do col-6 -->
 
 
 
+
+
+
+
+    </div>
   </div>
-</div>
