@@ -39,9 +39,9 @@ export class ConversorComponent {
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 1) {
        this.segundoNumero = this.primeiroNumero * this.valorCambio;
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 2) {
-       this.segundoNumero = this.primeiroNumero * this.valorCambio;
+       this.segundoNumero = this.primeiroNumero / this.valorCambio;
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 3) {
-       this.segundoNumero = this.primeiroNumero + this.valorCambio;
+       this.segundoNumero = this.primeiroNumero;
      } else {
        this.setMesagemError('Operação invalida');
      }
@@ -62,7 +62,7 @@ export class ConversorComponent {
      } else if (numeroConvertido1 == 1 && numeroConvertido2 == 3) {
        this.primeiroNumero = this.segundoNumero * this.valorCambio;
      } else if (numeroConvertido1 == 2 && numeroConvertido2 == 1) {
-       this.primeiroNumero = this.segundoNumero * this.valorCambio;
+       this.primeiroNumero = this.segundoNumero / this.valorCambio;
      } else if (numeroConvertido1 == 2 && numeroConvertido2 == 2) {
        this.primeiroNumero = this.segundoNumero;
      } else if (numeroConvertido1 == 2 && numeroConvertido2 == 3) {
@@ -70,9 +70,9 @@ export class ConversorComponent {
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 1) {
        this.primeiroNumero = this.segundoNumero / this.valorCambio;
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 2) {
-       this.primeiroNumero = this.segundoNumero * this.valorCambio;
+       this.primeiroNumero = this.segundoNumero / this.valorCambio;
      } else if (numeroConvertido1 == 3 && numeroConvertido2 == 3) {
-       this.primeiroNumero = this.segundoNumero * this.valorCambio;
+       this.primeiroNumero = this.segundoNumero;
      } else {
        this.setMesagemError('Operação invalida');
      }
