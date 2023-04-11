@@ -77,7 +77,7 @@ export class ConversorComponent {
        this.setMesagemError('Operação invalida');
      }
    } else {
-     this.setMesagemError('Selecione a medida dos dois campos!');
+     this.setMesagemError('Selecione a moeda dos dois campos!');
    }
  }
 
